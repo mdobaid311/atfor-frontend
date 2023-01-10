@@ -1,0 +1,8 @@
+@import "../../styles/master";
+
+.navbarContainer {
+  display: none;
+  @media screen and (max-width: $medium) {
+    display: block;
+  }
+}

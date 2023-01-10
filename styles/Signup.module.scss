@@ -1,0 +1,58 @@
+@import "./master";
+
+.container {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    @media screen and (max-width: $medium) {
+      font-size: 12px;
+      justify-content: center;
+    }
+    .logo {
+      @media screen and (max-width: $medium) {
+        display: none;
+      }
+    }
+
+    .navLinks {
+      .navLink {
+        padding: 0;
+        margin: 0 20px;
+        font-weight: 500;
+        font-size: larger;
+        &:hover {
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+  }
+  .optionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .optionContainer {
+      background: #fff;
+      margin: 15px;
+      // border: 1px solid #000;
+      border-radius: 5px;
+      padding: 15px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      .signupButton {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        font-size: larger;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+}

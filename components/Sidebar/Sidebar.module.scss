@@ -1,0 +1,46 @@
+@import "../../styles/master";
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+
+  .profileContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profileImg {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+      border-radius: 100%;
+      border: 1px solid #000;
+    }
+  }
+
+  .tabsContainer {
+    margin-top: 10px;
+    .tab {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 5px 0;
+      span {
+        margin-left: 5px;
+      }
+    }
+    .activeTab {
+      background: #000;
+      color: #fff;
+    }
+  }
+}

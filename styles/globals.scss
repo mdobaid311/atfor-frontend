@@ -1,0 +1,43 @@
+@import "./master";
+
+
+
+:root {
+  --primary-color-1: #e9eaee;
+  --primary-color-2: #ebecf0;
+  --secondary-color-1: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--primary-color-1);
+  color: var(--secondary-color-1);
+}
+
+body {
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
